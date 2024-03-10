@@ -1,0 +1,242 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: -2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: -10px 20px;
+}
+
+#logo img {
+    margin: 35px 1px;
+    height: 131px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    list-style: none;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 525px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 706px;
+    width: 100%;
+    background: url('../img/ulysse-pointcheval--j6LLsAehUo-unsplash.png') no-repeat center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+ 
+/* Services sectionn*/
+#services{
+   margin: 34px;
+   display: flex;
+   padding-top: 0px;
+}
+
+#services .box{
+   border: 2px solid brown;
+   padding: 34px;
+   margin: 10px 6px;
+   border-radius: 28px;
+   background-color: rgb(244, 240, 240);
+}
+
+#services .box img{
+    /* height: 143px; */
+    margin: auto;
+    display: block;
+    width: 230px;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Clients Section  */
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/olas.png') no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 124px;
+    
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* Utility class */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact-us-4193523__340.webp') no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
